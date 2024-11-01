@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "dan-gone-wild-7719d"
+  },
+  "targets": {},
+  "etags": {
+    "dan-gone-wild-7719d": {
+      "extensionInstances": {}
+    }
+  },
+  "dataconnectEmulatorConfig": {}
+}

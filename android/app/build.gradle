@@ -1,0 +1,45 @@
+plugins {
+    id "com.android.application"
+    id 'com.google.gms.google-services' // Firebase integration
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def flutterVersionCode = project.hasProperty('flutter.versionCode') ? project.property('flutter.versionCode') : "1"
+def flutterVersionName = project.hasProperty('flutter.versionName') ? project.property('flutter.versionName') : "1.0.0"
+def flutterCompileSdkVersion = project.hasProperty('flutter.compileSdkVersion') ? project.property('flutter.compileSdkVersion') : "34"
+def flutterTargetSdkVersion = project.hasProperty('flutter.targetSdkVersion') ? project.property('flutter.targetSdkVersion') : "34"
+def flutterNdkVersion = project.hasProperty('flutter.ndkVersion') ? project.property('flutter.ndkVersion') : null
+
+android {
+    namespace = "com.dangonewild.app"
+    compileSdkVersion = flutterCompileSdkVersion.toInteger() // Access from local.properties
+    ndkVersion = flutterNdkVersion // Access from local.properties if defined
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.dangonewild.app"
+        minSdkVersion = 33
+        targetSdkVersion = flutterTargetSdkVersion.toInteger() // Access from local.properties
+        versionCode = flutterVersionCode.toInteger() // Access from local.properties
+        versionName = flutterVersionName // Access from local.properties
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}

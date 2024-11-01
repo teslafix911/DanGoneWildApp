@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "823785634300",
+    "project_id": "dan-gone-wild-7719d",
+    "storage_bucket": "dan-gone-wild-7719d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823785634300:android:e6e5c758d225bac22dda79",
+        "android_client_info": {
+          "package_name": "com.dangonewild.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823785634300-puhvfb995ihbt3s0p8go9okuhv43qldp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dangonewild.app",
+            "certificate_hash": "fa9f6bb0308b3874a858a8c518a226fbe113e240"
+          }
+        },
+        {
+          "client_id": "823785634300-a6jsq6e8dh8dcee2hglsq1vg7qgb9ihm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnsgg9m6prYJh9xmmz31bm9Hxp2EQoemM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823785634300-a6jsq6e8dh8dcee2hglsq1vg7qgb9ihm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "823785634300-bgl7sl71kn68ff34dqbq8e6bkj32bjcc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.dangonewild"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
